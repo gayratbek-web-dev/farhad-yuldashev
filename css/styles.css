@@ -1207,3 +1207,14 @@ a:hover.back-to-top {
   /* end of extra pages */
 }
 /* end of min-width 1200px */
+/* patents */
+.patent-card{
+min-height: 425px;
+}
+.patent-card__inside{
+  border: 3px solid black;
+  height: 100%;
+}
+.patent-card__inside img{
+  height: 342px;
+}
