@@ -1236,3 +1236,10 @@ min-height: 425px;
   -webkit-line-clamp: 2;
   overflow: hidden;
 }
+.patent-title{
+
+}
+.patent-title__border{
+  border: 2px solid black;
+  height: 0;
+}
