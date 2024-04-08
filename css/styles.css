@@ -1218,3 +1218,21 @@ min-height: 425px;
 .patent-card__inside img{
   height: 342px;
 }
+/* publication-card */
+.title-link{
+  text-decoration: none;
+}
+.title-link:hover{
+  text-decoration: underline;
+}
+@media (max-width: 768px){
+  .title-link{
+    font-size: 25px;
+  }
+}
+.publication-description{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
