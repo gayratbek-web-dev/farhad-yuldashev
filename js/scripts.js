@@ -76,3 +76,27 @@
 	});
 
 })(jQuery);
+
+const languageButton = document.getElementById('languageButton');
+
+languageButton.addEventListener('click', () => {
+  // Check the current language
+  let language = document.documentElement.lang;
+  if (language === 'en') {
+    language = 'ru'; // Change to Russian
+    languageButton.textContent = ` Ru: (${language})`;
+} else {
+    language = 'en'; // Change to English
+    languageButton.textContent = `Eng (${language})`;
+  }
+
+  // Update the language attribute
+  document.documentElement.lang = language;
+
+  // Update the button text
+
+  // Add code here to switch the language of the page content
+});
+
+// Initialize the button text
+languageButton.textContent = `Eng (${document.documentElement.lang})`;
