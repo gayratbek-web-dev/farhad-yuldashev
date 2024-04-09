@@ -1024,7 +1024,7 @@ a:hover.back-to-top {
 
   /* Details */
   .split {
-    height: 760px;
+    min-height: 760px;
   }
 
   .split .area-1 {
@@ -1146,7 +1146,7 @@ a:hover.back-to-top {
 
   /* Details */
   .split {
-    height: 700px;
+    min-height: 700px;
   }
 
   .split .text-container {
@@ -1286,7 +1286,7 @@ ul.timeline > li:before {
 }
 /* public-card */
 .public-card{
-  height: 461px;
+  min-height: 461px;
   box-shadow: 0 0 10px 10px #0000;
 }
 .public-card .patent-card__inside{
