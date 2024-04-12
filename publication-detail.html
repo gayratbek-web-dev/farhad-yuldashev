@@ -28,7 +28,7 @@
     <!-- to have large image post format in Twitter -->
 
     <!-- Webpage Title -->
-    <title>Publications - Farhad Yuldashev</title>
+    <title data-lang="publications">Publications</title>
 
     <!-- Styles -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -50,7 +50,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
       <div class="container">
-        <a class="navbar-brand logo-text page-scroll" href="index.html"
+        <a class="navbar-brand logo-text page-scroll" href="index.html" data-lang="name"
           >Farhad Yuldashev</a
         >
 
@@ -68,20 +68,20 @@
         >
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link page-scroll" href="index.html"
+              <a class="nav-link page-scroll" href="index.html" data-lang="home"
                 >Home <span class="sr-only">(current)</span></a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link page-scroll" href="project.html"
+              <a class="nav-link page-scroll" href="project.html" data-lang="publications"
                 >Publications</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link page-scroll" href="privacy.html">Patents</a>
+              <a class="nav-link page-scroll" href="privacy.html" data-lang="patents">Patents</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link page-scroll" href="terms.html">Biography</a>
+              <a class="nav-link page-scroll" href="terms.html" data-lang="biography">Biography</a>
             </li>
           </ul>
           <span class="nav-item social-icons">
@@ -97,6 +97,10 @@
                 <i class="fab fa-twitter fa-stack-1x"></i>
               </a>
             </span>
+            <select class="btn-success px-3 py-2 border rounded ml-2" id="language-selector" onchange="updateLanguage()">
+              <option value="en">English</option>
+              <option value="ru">Russian</option>
+            </select>
           </span>
         </div>
         <!-- end of navbar-collapse -->
@@ -111,9 +115,8 @@
       <div class="container">
         <div class="row">
           <div class="col-xl-10 offset-xl-1">
-            <h1 class="publication-description__title">
-              TEXNOGEN VA ISHLAB CHIQARISH CHIQINDILARINI UTILIZATSIYA QILISH
-              ORQALI EKOLOGIK MUAMMOLLARNI HAL ETISH ASOSLARI
+            <h1 class="publication-description__title" data-lang="publication1">
+              PRINCIPLES OF SOLUTION OF ENVIRONMENTAL PROBLEMS THROUGH THE UTILIZATION OF TECHNOLOGICAL AND PRODUCTION WASTE
             </h1>
           </div>
           <!-- end of col -->
@@ -196,7 +199,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
-            <p class="p-small">
+            <p class="p-small" data-lang="footer_emblem">
               Made by IFraganus IT Co. ALL RIGHT RESERVED.
             </p>
           </div>

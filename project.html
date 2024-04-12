@@ -28,7 +28,8 @@
     <!-- to have large image post format in Twitter -->
 
     <!-- Webpage Title -->
-    <title>Publications  -  Farhad Yuldashev</title>
+    <title data-lang="publications">Publications</title>
+
 
     <!-- Styles -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -49,7 +50,7 @@
       <div class="container">
        
 
-        <a class="navbar-brand logo-text page-scroll" href="index.html">Farhad Yuldashev</a>
+        <a class="navbar-brand logo-text page-scroll" href="index.html" data-lang="name">Farhad Yuldashev</a>
 
         <button
           class="navbar-toggler p-0 border-0"
@@ -65,18 +66,18 @@
         >
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link page-scroll" href="index.html"
+            <a class="nav-link page-scroll" href="index.html" data-lang="home"
               >Home <span class="sr-only">(current)</span></a
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link page-scroll" href="project.html">Publications</a>
+            <a class="nav-link page-scroll" href="project.html" data-lang="publications">Publications</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link page-scroll" href="privacy.html">Patents</a>
+            <a class="nav-link page-scroll" href="privacy.html" data-lang="patents">Patents</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link page-scroll" href="terms.html">Biography</a>
+            <a class="nav-link page-scroll" href="terms.html" data-lang="biography">Biography</a>
           </li>
         </ul>
           <span class="nav-item social-icons">
@@ -92,6 +93,10 @@
                 <i class="fab fa-twitter fa-stack-1x"></i>
               </a>
             </span>
+            <select class="btn-success px-3 py-2 border rounded ml-2" id="language-selector" onchange="updateLanguage()">
+              <option value="en">English</option>
+              <option value="ru">Russian</option>
+            </select>
           </span>
         </div>
         <!-- end of navbar-collapse -->
@@ -106,7 +111,7 @@
       <div class="container">
         <div class="row">
           <div class="col-xl-10 offset-xl-1">
-            <h1>Publications</h1>
+            <h1 data-lang="publications">Publications</h1>
           </div>
           <!-- end of col -->
         </div>
@@ -128,14 +133,14 @@
               <span class="mr-2 d-flex align-items-center"><i class="fa-regular fa-eye"></i><span class="see-count ml-1">100</span></span>
               <span class="mr-2 d-flex align-items-center"><i class="fa-regular fa-thumbs-up"></i><span class="like-count ml-1">1000</span></span>
             </div>
-            <h5 class="text-white">
+            <h5 class="text-white" data-lang="name">
               Farhad Yuldashev
             </h5>
-            <h2><a class="text-white title-link" href="./publication-detail.html">
-              TEXNOGEN VA ISHLAB CHIQARISH CHIQINDILARINI UTILIZATSIYA QILISH ORQALI EKOLOGIK MUAMMOLLARNI HAL ETISH ASOSLARI
+            <h2><a class="text-white title-link" href="./publication-detail.html" data-lang="publication1">
+              PRINCIPLES OF SOLUTION OF ENVIRONMENTAL PROBLEMS THROUGH THE UTILIZATION OF TECHNOLOGICAL AND PRODUCTION WASTE
             </a>
           </h2>
-          <p class="text-white publication-description">
+          <p class="text-white publication-description" data-lang="publication1_info">
             This thesis presents information about the formation of industrial and construction waste, the areas they occupy, as well as the results of research on effective methods for recycling industrial and...
         </p>
           </div>
@@ -146,50 +151,14 @@
               <span class="mr-2 d-flex align-items-center"><i class="fa-regular fa-eye"></i><span class="see-count ml-1">100</span></span>
               <span class="mr-2 d-flex align-items-center"><i class="fa-regular fa-thumbs-up"></i><span class="like-count ml-1">1000</span></span>
             </div>
-            <h5 class="text-white">
+            <h5 class="text-white" data-lang="name">
               Farhad Yuldashev
             </h5>
-            <h2><a class="text-white title-link" href="./publication-detail.html">
-              Efficient utilization of anthropogenic waste: a particular focus on phosphogypsum and ash slag
-            </a>
-          </h2>
-          <p class="text-white publication-description">
-            The focal point of this article resides in the pressing concern surrounding the mounting stockpiles of man-made waste, specifically phosphogypsum and ash slag, which have amassed in voluminous dumps across...
-        </p>
-          </div>
-
-          <div class="publication-card bg-dark p-4 rounded mt-3">
-            <div class="publation-logos d-flex text-white">
-              <span class="mr-2 d-flex align-items-center"><i class="fa-regular fa-calendar"></i><span class="date-count ml-1">2024</span></span>
-              <span class="mr-2 d-flex align-items-center"><i class="fa-regular fa-eye"></i><span class="see-count ml-1">100</span></span>
-              <span class="mr-2 d-flex align-items-center"><i class="fa-regular fa-thumbs-up"></i><span class="like-count ml-1">1000</span></span>
-            </div>
-            <h5 class="text-white">
-              Farhad Yuldashev
-            </h5>
-            <h2><a class="text-white title-link" href="./publication-detail.html">
-              Phosphogypsum and ASH will help solve the problem of waste disposal from the chemical industry and thermal power engineering
-            </a>
-          </h2>
-          <p class="text-white publication-description">
-            The most appropriate solution to environmental and economic problems associated with the disposal of industrial waste is the creation of waste-free production. In this article, the solution to the environmental problem of recycling large-tonnage technogenic waste is shown using the example of the use of phosphogypsum...
-        </p>
-          </div>
-
-          <div class="publication-card bg-dark p-4 rounded mt-3">
-            <div class="publation-logos d-flex text-white">
-              <span class="mr-2 d-flex align-items-center"><i class="fa-regular fa-calendar"></i><span class="date-count ml-1">2024</span></span>
-              <span class="mr-2 d-flex align-items-center"><i class="fa-regular fa-eye"></i><span class="see-count ml-1">100</span></span>
-              <span class="mr-2 d-flex align-items-center"><i class="fa-regular fa-thumbs-up"></i><span class="like-count ml-1">1000</span></span>
-            </div>
-            <h5 class="text-white">
-              Farhad Yuldashev
-            </h5>
-            <h2><a class="text-white title-link" href="./publication-detail.html">
+            <h2><a class="text-white title-link" href="./publication-detail.html" data-lang="publication2">
               IMPROVING THE EFFICIENCY OF RECYCLING MAN-MADE WASTE
             </a>
           </h2>
-          <p class="text-white publication-description">
+          <p class="text-white publication-description" data-lang="publication2_info">
             This article raises the problem of recycling “red sludge” – this is the waste of aluminum production, which has accumulated in dumps around the world for millions of tons. The...
         </p>
           </div>
@@ -200,14 +169,50 @@
               <span class="mr-2 d-flex align-items-center"><i class="fa-regular fa-eye"></i><span class="see-count ml-1">100</span></span>
               <span class="mr-2 d-flex align-items-center"><i class="fa-regular fa-thumbs-up"></i><span class="like-count ml-1">1000</span></span>
             </div>
-            <h5 class="text-white">
+            <h5 class="text-white" data-lang="name">
               Farhad Yuldashev
             </h5>
-            <h2><a class="text-white title-link" href="./publication-detail.html">
+            <h2><a class="text-white title-link" href="./publication-detail.html" data-lang="publication3">
+              Efficient utilization of anthropogenic waste: a particular focus on phosphogypsum and ash slag
+            </a>
+          </h2>
+          <p class="text-white publication-description" data-lang="publication3_info">
+            The focal point of this article resides in the pressing concern surrounding the mounting stockpiles of man-made waste, specifically phosphogypsum and ash slag, which have amassed in voluminous dumps across...
+        </p>
+          </div>
+
+          <div class="publication-card bg-dark p-4 rounded mt-3">
+            <div class="publation-logos d-flex text-white">
+              <span class="mr-2 d-flex align-items-center"><i class="fa-regular fa-calendar"></i><span class="date-count ml-1">2024</span></span>
+              <span class="mr-2 d-flex align-items-center"><i class="fa-regular fa-eye"></i><span class="see-count ml-1">100</span></span>
+              <span class="mr-2 d-flex align-items-center"><i class="fa-regular fa-thumbs-up"></i><span class="like-count ml-1">1000</span></span>
+            </div>
+            <h5 class="text-white" data-lang="name">
+              Farhad Yuldashev
+            </h5>
+            <h2><a class="text-white title-link" href="./publication-detail.html" data-lang="publication4">
+              Phosphogypsum and ASH will help solve the problem of waste disposal from the chemical industry and thermal power engineering
+            </a>
+          </h2>
+          <p class="text-white publication-description" data-lang="publication4_info">
+            The most appropriate solution to environmental and economic problems associated with the disposal of industrial waste is the creation of waste-free production. In this article, the solution to the environmental problem of recycling large-tonnage technogenic waste is shown using the example of the use of phosphogypsum...
+        </p>
+          </div>
+
+          <div class="publication-card bg-dark p-4 rounded mt-3">
+            <div class="publation-logos d-flex text-white">
+              <span class="mr-2 d-flex align-items-center"><i class="fa-regular fa-calendar"></i><span class="date-count ml-1">2024</span></span>
+              <span class="mr-2 d-flex align-items-center"><i class="fa-regular fa-eye"></i><span class="see-count ml-1">100</span></span>
+              <span class="mr-2 d-flex align-items-center"><i class="fa-regular fa-thumbs-up"></i><span class="like-count ml-1">1000</span></span>
+            </div>
+            <h5 class="text-white" data-lang="name">
+              Farhad Yuldashev
+            </h5>
+            <h2><a class="text-white title-link" href="./publication-detail.html" data-lang="publication5">
               AN ADDITIVE FOR THE PRODUCTION OF CEMENT HIGH QUALITY
             </a>
           </h2>
-          <p class="text-white publication-description">
+          <p class="text-white publication-description" data-lang="publication5_info">
             In this article we will talk about the methods of utilization of man-made waste and the production of an active synthesized additive "Opocophosphate", consisting of two main ingredients - phosphogypsum...
         </p>
           </div>
@@ -274,7 +279,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
-            <p class="p-small">
+            <p class="p-small" data-lang="footer_emblem">
               Made by IFraganus IT Co. ALL RIGHT RESERVED.
             </p>
           </div>

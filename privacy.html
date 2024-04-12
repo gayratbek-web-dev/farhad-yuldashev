@@ -28,7 +28,7 @@
     <!-- to have large image post format in Twitter -->
 
     <!-- Webpage Title -->
-    <title>Patents - Farhad Yuldashev</title>
+    <title data-lang="patents">Patents</title>
 
     <!-- Styles -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -48,7 +48,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
       <div class="container">
-        <a class="navbar-brand logo-text page-scroll" href="index.html"
+        <a class="navbar-brand logo-text page-scroll" href="index.html" data-lang="name"
           >Farhad Yuldashev</a
         >
 
@@ -66,20 +66,20 @@
         >
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link page-scroll" href="index.html"
+              <a class="nav-link page-scroll" href="index.html" data-lang="home"
                 >Home <span class="sr-only">(current)</span></a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link page-scroll" href="project.html"
+              <a class="nav-link page-scroll" href="project.html" data-lang="publications"
                 >Publications</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link page-scroll" href="privacy.html">Patents</a>
+              <a class="nav-link page-scroll" href="privacy.html" data-lang="patents">Patents</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link page-scroll" href="terms.html">Biography</a>
+              <a class="nav-link page-scroll" href="terms.html" data-lang="biography">Biography</a>
             </li>
           </ul>
           <span class="nav-item social-icons">
@@ -95,6 +95,10 @@
                 <i class="fab fa-twitter fa-stack-1x"></i>
               </a>
             </span>
+            <select class="btn-success px-3 py-2 border rounded ml-2" id="language-selector" onchange="updateLanguage()">
+              <option value="en">English</option>
+              <option value="ru">Russian</option>
+            </select>
           </span>
         </div>
         <!-- end of navbar-collapse -->
@@ -109,7 +113,7 @@
       <div class="container">
         <div class="row">
           <div class="col-xl-10 offset-xl-1">
-            <h1>Patents</h1>
+            <h1 data-lang="patents">Patents</h1>
           </div>
           <!-- end of col -->
         </div>
@@ -126,9 +130,81 @@
         <div class="row justify-content-around">
           <div class="p-1 patent-card col-lg-3 col-md-4 col-sm-6 col-10">
             <div class="patent-card__inside d-flex flex-column">
+              <img class="w-100 patent-img" src="./images/work-5.jpg" alt="" />
+              <div class="p-1 d-flex flex-column justify-content-between h-100">
+                <h6 data-lang="patent1">Method of obtaining duolite</h6>
+                <button
+                  class="btn-success mb-2 border rounded-sm text-white px-4 py-1 float-right"
+                >
+                  <a
+                    class="text-white text-decoration-none d-flex w-100 justify-content-center align-items-center"
+                    href="./patents/Дуолит 1.jpg"
+                    target="_blank"
+                    ><i class="fa-solid fa-download mr-2"></i> <span data-lang="download">Download</span></a
+                  >
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="p-1 patent-card col-lg-3 col-md-4 col-sm-6 col-10">
+            <div class="patent-card__inside d-flex flex-column">
+              <img class="w-100 patent-img" src="./images/work-6.jpg" alt="" />
+              <div class="p-1 d-flex flex-column justify-content-between h-100">
+                <h6 data-lang="patent2">Nanoclay for growing plants on desert and fertile soils and a method for its production</h6>
+                <button
+                  class="btn-success mb-2 border rounded-sm text-white px-4 py-1 float-right"
+                >
+                  <a
+                    class="text-white text-decoration-none d-flex w-100 justify-content-center align-items-center"
+                    href="./patents/Патент Наноглина.pdf"
+                    target="_blank"
+                    ><i class="fa-solid fa-download mr-2"></i> <span data-lang="download">Download</span></a
+                  >
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="p-1 patent-card col-lg-3 col-md-4 col-sm-6 col-10">
+            <div class="patent-card__inside d-flex flex-column">
+              <img class="w-100 patent-img" src="./images/work-7.jpg" alt="" />
+              <div class="p-1 d-flex flex-column justify-content-between h-100">
+                <h6 data-lang="patent3">Method for producing coal-alkali reagent</h6>
+                <button
+                  class="btn-success mb-2 border rounded-sm text-white px-4 py-1 float-right"
+                >
+                  <a
+                    class="text-white text-decoration-none d-flex w-100 justify-content-center align-items-center"
+                    href="./patents/Патент УЩР.pdf"
+                    target="_blank"
+                    ><i class="fa-solid fa-download mr-2"></i> <span data-lang="download">Download</span></a
+                  >
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="p-1 patent-card col-lg-3 col-md-4 col-sm-6 col-10">
+            <div class="patent-card__inside d-flex flex-column">
+              <img class="w-100 patent-img" src="./images/work-8.jpg" alt="" />
+              <div class="p-1 d-flex flex-column justify-content-between h-100">
+                <h6 data-lang="patent4">Active synthesized additive for cement and method for its preparation</h6>
+                <button
+                  class="btn-success mb-2 border rounded-sm text-white px-4 py-1 float-right"
+                >
+                  <a
+                    class="text-white text-decoration-none d-flex w-100 justify-content-center align-items-center"
+                    href="./patents/Патент_2733360_Активная_синтезированная_мин_добавка_к_цементу.pdf"
+                    target="_blank"
+                    ><i class="fa-solid fa-download mr-2"></i> <span data-lang="download">Download</span></a
+                  >
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="p-1 patent-card col-lg-3 col-md-4 col-sm-6 col-10">
+            <div class="patent-card__inside d-flex flex-column">
               <img class="w-100 patent-img" src="./images/work-1.jpg" alt="" />
               <div class="p-1 d-flex flex-column justify-content-between h-100">
-                <h6>
+                <h6 data-lang="patent5">
                   Active mineral additive for cement and method of its
                   preparation
                 </h6>
@@ -139,7 +215,7 @@
                     class="text-white text-decoration-none d-flex w-100 justify-content-center align-items-center"
                     target="_blank"
                     href="./patents/patent1.pdf"
-                    ><i class="fa-solid fa-download mr-2"></i> Download</a
+                    ><i class="fa-solid fa-download mr-2"></i> <span data-lang="download">Download</span></a
                   >
                 </button>
               </div>
@@ -149,7 +225,7 @@
             <div class="patent-card__inside d-flex flex-column">
               <img class="w-100 patent-img" src="./images/work-2.jpg" alt="" />
               <div class="p-1 d-flex flex-column justify-content-between h-100">
-                <h6>Method for obtaining humic product</h6>
+                <h6 data-lang="patent6">Method for obtaining humic product</h6>
                 <button
                   class="btn-success mb-2 border rounded-sm text-white px-4 py-1 float-right"
                 >
@@ -157,7 +233,7 @@
                     class="text-white text-decoration-none d-flex w-100 justify-content-center align-items-center"
                     href="./patents/patent2.pdf"
                     target="_blank"
-                    ><i class="fa-solid fa-download mr-2"></i> Download</a
+                    ><i class="fa-solid fa-download mr-2"></i> <span data-lang="download">Download</span></a
                   >
                 </button>
               </div>
@@ -167,7 +243,7 @@
             <div class="patent-card__inside d-flex flex-column">
               <img class="w-100 patent-img" src="./images/work-3.jpg" alt="" />
               <div class="p-1 d-flex flex-column justify-content-between h-100">
-                <h6>Raw material mixture and method for preparing active mineral additives for cement</h6>
+                <h6 data-lang="patent7">Raw material mixture and method for preparing active mineral additives for cement</h6>
                 <button
                   class="btn-success mb-2 border rounded-sm text-white px-4 py-1 float-right"
                 >
@@ -175,7 +251,7 @@
                     class="text-white text-decoration-none d-flex w-100 justify-content-center align-items-center"
                     href="./patents/patent3.pdf"
                     target="_blank"
-                    ><i class="fa-solid fa-download mr-2"></i> Download</a
+                    ><i class="fa-solid fa-download mr-2"></i> <span data-lang="download">Download</span></a
                   >
                 </button>
               </div>
@@ -185,7 +261,7 @@
             <div class="patent-card__inside d-flex flex-column">
               <img class="w-100 patent-img" src="./images/work-4.jpg" alt="" />
               <div class="p-1 d-flex flex-column justify-content-between h-100">
-                <h6>Raw mixture for producing white cement</h6>
+                <h6 data-lang="patent8">Raw mixture for producing white cement</h6>
                 <button
                   class="btn-success mb-2 border rounded-sm text-white px-4 py-1 float-right"
                 >
@@ -193,79 +269,7 @@
                     class="text-white text-decoration-none d-flex w-100 justify-content-center align-items-center"
                     href="./patents/Белый цемент.pdf"
                     target="_blank"
-                    ><i class="fa-solid fa-download mr-2"></i> Download</a
-                  >
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="p-1 patent-card col-lg-3 col-md-4 col-sm-6 col-10">
-            <div class="patent-card__inside d-flex flex-column">
-              <img class="w-100 patent-img" src="./images/work-5.jpg" alt="" />
-              <div class="p-1 d-flex flex-column justify-content-between h-100">
-                <h6>Method of obtaining duolite</h6>
-                <button
-                  class="btn-success mb-2 border rounded-sm text-white px-4 py-1 float-right"
-                >
-                  <a
-                    class="text-white text-decoration-none d-flex w-100 justify-content-center align-items-center"
-                    href="./patents/Дуолит 1.jpg"
-                    target="_blank"
-                    ><i class="fa-solid fa-download mr-2"></i> Download</a
-                  >
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="p-1 patent-card col-lg-3 col-md-4 col-sm-6 col-10">
-            <div class="patent-card__inside d-flex flex-column">
-              <img class="w-100 patent-img" src="./images/work-6.jpg" alt="" />
-              <div class="p-1 d-flex flex-column justify-content-between h-100">
-                <h6>Nanoclay for growing plants on desert and fertile soils and a method for its production</h6>
-                <button
-                  class="btn-success mb-2 border rounded-sm text-white px-4 py-1 float-right"
-                >
-                  <a
-                    class="text-white text-decoration-none d-flex w-100 justify-content-center align-items-center"
-                    href="./patents/Патент Наноглина.pdf"
-                    target="_blank"
-                    ><i class="fa-solid fa-download mr-2"></i> Download</a
-                  >
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="p-1 patent-card col-lg-3 col-md-4 col-sm-6 col-10">
-            <div class="patent-card__inside d-flex flex-column">
-              <img class="w-100 patent-img" src="./images/work-7.jpg" alt="" />
-              <div class="p-1 d-flex flex-column justify-content-between h-100">
-                <h6>Method for producing coal-alkali reagent</h6>
-                <button
-                  class="btn-success mb-2 border rounded-sm text-white px-4 py-1 float-right"
-                >
-                  <a
-                    class="text-white text-decoration-none d-flex w-100 justify-content-center align-items-center"
-                    href="./patents/Патент УЩР.pdf"
-                    target="_blank"
-                    ><i class="fa-solid fa-download mr-2"></i> Download</a
-                  >
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="p-1 patent-card col-lg-3 col-md-4 col-sm-6 col-10">
-            <div class="patent-card__inside d-flex flex-column">
-              <img class="w-100 patent-img" src="./images/work-8.jpg" alt="" />
-              <div class="p-1 d-flex flex-column justify-content-between h-100">
-                <h6>Active synthesized additive for cement and method for its preparation</h6>
-                <button
-                  class="btn-success mb-2 border rounded-sm text-white px-4 py-1 float-right"
-                >
-                  <a
-                    class="text-white text-decoration-none d-flex w-100 justify-content-center align-items-center"
-                    href="./patents/Патент_2733360_Активная_синтезированная_мин_добавка_к_цементу.pdf"
-                    target="_blank"
-                    ><i class="fa-solid fa-download mr-2"></i> Download</a
+                    ><i class="fa-solid fa-download mr-2"></i> <span data-lang="download">Download</span></a
                   >
                 </button>
               </div>
@@ -275,7 +279,7 @@
             <div class="patent-card__inside d-flex flex-column">
               <img class="w-100 patent-img" src="./images/work-9.jpg" alt="" />
               <div class="p-1 d-flex flex-column justify-content-between h-100">
-                <h6>Mineral wool composition</h6>
+                <h6 data-lang="patent9">Mineral wool composition</h6>
                 <button
                   class="btn-success mb-2 border rounded-sm text-white px-4 py-1 float-right"
                 >
@@ -283,7 +287,7 @@
                     class="text-white text-decoration-none d-flex w-100 justify-content-center align-items-center"
                     href="./patents/Патент_на_Минеральную_вату.jpg"
                     target="_blank"
-                    ><i class="fa-solid fa-download mr-2"></i> Download</a
+                    ><i class="fa-solid fa-download mr-2"></i> <span data-lang="download">Download</span></a
                   >
                 </button>
               </div>
@@ -293,7 +297,7 @@
             <div class="patent-card__inside d-flex flex-column">
               <img class="w-100 patent-img" src="./images/work-10.jpg" alt="" />
               <div class="p-1 d-flex flex-column justify-content-between h-100">
-                <h6>Method of processing cotton meal</h6>
+                <h6 data-lang="patent10">Method of processing cotton meal</h6>
                 <button
                   class="btn-success mb-2 border rounded-sm text-white px-4 py-1 float-right"
                 >
@@ -301,7 +305,7 @@
                     class="text-white text-decoration-none d-flex w-100 justify-content-center align-items-center"
                   href="./patents/Патент_Соб_переработки.pdf"
                     target="_blank"
-                    ><i class="fa-solid fa-download mr-2"></i> Download</a
+                    ><i class="fa-solid fa-download mr-2"></i> <span data-lang="download">Download</span></a
                   >
                 </button>
               </div>
@@ -367,7 +371,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
-            <p class="p-small">
+            <p class="p-small" data-lang="footer_emblem">
               Made by IFraganus IT Co. ALL RIGHT RESERVED.
             </p>
           </div>

@@ -18,7 +18,7 @@
 	<meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
 
     <!-- Webpage Title -->
-    <title>Biography - Farhad Yuldashev</title>
+    <title data-lang="biography">Biography</title>
     
     <!-- Styles -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -36,7 +36,7 @@
         <div class="container">
             
 
-            <a class="navbar-brand logo-text page-scroll" href="index.html">Farhad Yuldashev</a>
+            <a class="navbar-brand logo-text page-scroll" href="index.html" data-lang="name">Farhad Yuldashev</a>
 
             <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
                 <span class="navbar-toggler-icon"></span>
@@ -45,18 +45,18 @@
             <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                      <a class="nav-link page-scroll" href="index.html"
+                      <a class="nav-link page-scroll" href="index.html" data-lang="home"
                         >Home <span class="sr-only">(current)</span></a
                       >
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link page-scroll" href="project.html">Publications</a>
+                      <a class="nav-link page-scroll" href="project.html" data-lang="publications">Publications</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link page-scroll" href="privacy.html">Patents</a>
+                      <a class="nav-link page-scroll" href="privacy.html" data-lang="patents">Patents</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link page-scroll" href="terms.html">Biography</a>
+                      <a class="nav-link page-scroll" href="terms.html" data-lang="biography">Biography</a>
                     </li>
                   </ul>
                 <span class="nav-item social-icons">
@@ -72,6 +72,10 @@
                             <i class="fab fa-twitter fa-stack-1x"></i>
                         </a>
                     </span>
+                    <select class="btn-success px-3 py-2 border rounded ml-2" id="language-selector" onchange="updateLanguage()">
+                        <option value="en">English</option>
+                        <option value="ru">Russian</option>
+                      </select>
                 </span>
             </div> <!-- end of navbar-collapse -->
         </div> <!-- end of container -->
@@ -84,7 +88,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xl-10 offset-xl-1">
-                    <h1>Biography</h1>
+                    <h1 data-lang="biography">Biography</h1>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
@@ -96,62 +100,62 @@
    <div class="container mt-5 mb-5">
 	<div class="row">
 		<div class="col-md-8 offset-md-2">
-			<h4>Biography</h4>
+			<h4 data-lang="biography">Biography</h4>
 			<ul class="timeline">
 				<li>
-					<a target="_blank" href="">Birth</a>
-					<a href="#" class="float-right">January 31, 1967</a>
-					<p>Born on January 31, 1967 in the city of Tashkent.</p>
+					<a target="_blank" href="" data-lang="birth">Birth</a>
+					<a href="#" class="float-right"> 31.01.1967</a>
+					<p data-lang="birth_info">Born on January 31, 1967 in the city of Tashkent.</p>
 				</li>
 				<li>
-					<a href="#">Career</a>
-					<a href="#" class="float-right">in 1984</a>
-                    <p>He began his career in 1984 as a mechanic at Woodworking Plant No. 2 (Tashkent).</p>
+					<a href="#" data-lang="career">Career</a>
+					<a href="#" class="float-right"> 1984</a>
+                    <p data-lang="career_info">He began his career in 1984 as a mechanic at Woodworking Plant No. 2 (Tashkent).</p>
 				</li>
 				<li>
-					<a href="#">Army</a>
-					<a href="#" class="float-right">in 1985</a>
-                    <p>In 1985, the Mission was sent to the Soviet Army in the Far East in Khabarovsk. He served in a combined arms division in a security and escort company, was a squad commander, an excellent student in combat and military training, secretary of the Komsomol part of the organization, became a candidate member of the Communist Party, and for excellent service received a recommendation for admission to a university.</p>
+					<a href="#" data-lang="army">Army</a>
+					<a href="#" class="float-right"> 1985</a>
+                    <p data-lang="army_info">In 1985, the Mission was sent to the Soviet Army in the Far East in Khabarovsk. He served in a combined arms division in a security and escort company, was a squad commander, an excellent student in combat and military training, secretary of the Komsomol part of the organization, became a candidate member of the Communist Party, and for excellent service received a recommendation for admission to a university.</p>
 				</li>
                 <li>
-					<a href="#">Bachelor degree</a>
+					<a href="#" data-lang="bachelor">Bachelor degree</a>
 					<a href="#" class="float-right">1987 - 1992</a>
-                    <p>In 1987 he entered and in 1992 graduated from Tashkent State University. V.I. Lenin, majoring in the history of the countries of the Foreign East with in-depth study of Arabic and English. In the process of studying, excellent results undergo practical training as a translator at Amman University (Kingdom of Jordan, Amman).</p>
+                    <p data-lang="study_info">In 1987 he entered and in 1992 graduated from Tashkent State University. V.I. Lenin, majoring in the history of the countries of the Foreign East with in-depth study of Arabic and English. In the process of studying, excellent results undergo practical training as a translator at Amman University (Kingdom of Jordan, Amman).</p>
 				</li>
                 <li>
-					<a href="#">Work</a>
-					<a href="#" class="float-right">since 1992</a>
-                    <p>Since 1992, after graduating from university, he worked at the Tashkent Institute of Irrigation and Agricultural Mechanization in different countries, within the boundaries of the economic zone.</p>
+					<a href="#" data-lang="work">Work</a>
+					<a href="#" class="float-right"> 1992</a>
+                    <p data-lang="work_info">Since 1992, after graduating from university, he worked at the Tashkent Institute of Irrigation and Agricultural Mechanization in different countries, within the boundaries of the economic zone.</p>
 				</li>
                 <li>
-					<a href="#">General Director</a>
-					<a href="#" class="float-right">since 1993</a>
-                    <p>Since 1993, he worked as the general director of the Tamkhorlik charitable foundation.</p>
+					<a data-lang="director" href="#">General Director</a>
+					<a href="#" class="float-right"> 1993</a>
+                    <p data-lang="director_info">Since 1993, he worked as the general director of the Tamkhorlik charitable foundation.</p>
 				</li>
                 <li>
-					<a href="#">Private Business</a>
-					<a href="#" class="float-right">since 1997</a>
-                    <p>Since 1997, he has worked in various departments of private business (private flour mill, private broiler poultry farm).</p>
+					<a data-lang="business" href="#">Private Business</a>
+					<a href="#" class="float-right"> 1997</a>
+                    <p data-lang="business_info">Since 1997, he has worked in various departments of private business (private flour mill, private broiler poultry farm).</p>
 				</li>
                 <li>
-					<a href="#">Representative of a French company</a>
-					<a href="#" class="float-right">since 2000</a>
-                    <p>Since 2000, general representative of a French company engaged in the production and sale of vitamin and mineral complexes for livestock and poultry farming.</p>
+					<a data-lang="representative" href="#">Representative of a French company</a>
+					<a href="#" class="float-right"> 2000</a>
+                    <p data-lang="representative_info">Since 2000, general representative of a French company engaged in the production and sale of vitamin and mineral complexes for livestock and poultry farming.</p>
 				</li>
                 <li>
-					<a href="#">Own diversified company</a>
-					<a href="#" class="float-right">in 2007</a>
-                    <p>In 2007, she created her own diversified company, the basis of which is the production of building materials. Farkhod Talazovich received 4 patents for the invention of cement and concrete, which improve the quality of products. None of them (Fofozol) has any analogues in the world. Patents have also been obtained for the production of humic mineral fertilizers. All inventions are registered both in Uzbekistan and in Russia.</p>
+					<a href="#" data-lang="company">Own diversified company</a>
+					<a href="#" class="float-right"> 2007</a>
+                    <p data-lang="company_description">In 2007, she created her own diversified company, the basis of which is the production of building materials. Farkhod Talazovich received 4 patents for the invention of cement and concrete, which improve the quality of products. None of them (Fofozol) has any analogues in the world. Patents have also been obtained for the production of humic mineral fertilizers. All inventions are registered both in Uzbekistan and in Russia.</p>
 				</li>
                 <li>
-					<a href="#">Master's Degree</a>
+					<a href="#" data-lang="degree">Master's Degree</a>
 					<a href="#" class="float-right">2016 - 2018</a>
-                    <p>In 2016 he entered the Belgorod State Technical University named after V.G. Shukhov for a master's degree in the specialty of chemical technologist at the department of "Production of cement and composite materials." In 2018 he graduated from BSTU. V.G. Shukhov in contrast.</p>
+                    <p data-lang="master_info">In 2016 he entered the Belgorod State Technical University named after V.G. Shukhov for a master's degree in the specialty of chemical technologist at the department of "Production of cement and composite materials." In 2018 he graduated from BSTU. V.G. Shukhov in contrast.</p>
 				</li>
                 <li>
-					<a href="#">Master's Degree </a>
-					<a href="#" class="float-right">in 2019</a>
-                    <p>In 2019, he entered graduate school at BSTU named after. V.G. Shukhova.</p>
+					<a href="#" data-lang="degree">Master's Degree </a>
+					<a href="#" class="float-right"> 2019</a>
+                    <p data-lang="master_info2">In 2019, he entered graduate school at BSTU named after. V.G. Shukhova.</p>
 				</li>
 			</ul>
 		</div>
@@ -209,7 +213,7 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-12">
-              <p class="p-small">
+              <p class="p-small" data-lang="footer_emblem">
                 Made by IFraganus IT Co. ALL RIGHT RESERVED.
               </p>
             </div>

@@ -28,7 +28,7 @@
     <!-- to have large image post format in Twitter -->
 
     <!-- Webpage Title -->
-    <title>Farhad Yuldashev</title>
+    <title  data-lang="name">Farhad Yuldashev</title>
 
     <!-- Styles -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -47,8 +47,8 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
       <div class="container">
-        <a class="navbar-brand logo-text page-scroll" href="index.html"
-          >Farhad Yuldashev</a
+        <a class="navbar-brand logo-text page-scroll pl-5 ml-5" href="index.html"
+        data-lang="name"  >Farhad Yuldashev</a
         >
 
         <button
@@ -65,18 +65,18 @@
         >
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link page-scroll" href="#header"
+              <a class="nav-link page-scroll" href="#header" data-lang="home"
                 >Home <span class="sr-only">(current)</span></a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link page-scroll" href="project.html">Publications</a>
+              <a class="nav-link page-scroll" href="project.html" data-lang="publications">Publications</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link page-scroll" href="privacy.html">Patents</a>
+              <a class="nav-link page-scroll" href="privacy.html" data-lang="patents">Patents</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link page-scroll" href="terms.html">Biography</a>
+              <a class="nav-link page-scroll" href="terms.html" data-lang="biography">Biography</a>
             </li>
           </ul>
           <span class="nav-item social-icons">
@@ -92,7 +92,10 @@
                 <i class="fab fa-twitter fa-stack-1x"></i>
               </a>
             </span>
-            <button class="btn-success px-3 py-2 border rounded" id="languageButton">Eng <i class="fa-solid fa-arrow-down"></i></button>
+            <select class="btn-success px-3 py-2 border rounded ml-2" id="language-selector" onchange="updateLanguage()">
+              <option value="en">English</option>
+              <option value="ru">Russian</option>
+            </select>
           </span>
         </div>
         <!-- end of navbar-collapse -->
@@ -107,7 +110,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
-              <h1 class="h1-large">
+              <h1 class="h1-large" data-lang="quote">
                 "Research is to see what everybody else has seen, and to think what nobody else has thought." - Albert Szent-Györgyi
               </h1>
             <!-- end of text-container -->
@@ -127,8 +130,8 @@
         <div class="row">
           <div class="col-lg-4">
             <div class="text-container first">
-              <h2>Farhad Yuldashev</h2>
-              <p>
+              <h2 data-lang="name">Farhad Yuldashev</h2>
+              <p data-lang="biography_info">
                 Contains 11 scientific publications, the total content of 49 author's newspapers. Married, has 3 children. In his free time he enjoys golf, chess, football, basketball and Russian billiards.
               </p>
             </div>
@@ -137,13 +140,13 @@
           <!-- end of col -->
           <div class="col-lg-4">
             <div class="text-container second">
-              <div class="time">2019 - present</div>
-              <h6>Master's Degree
+              <div class="time">2019 - <span data-lang="present">present</span></div>
+              <h6 data-lang="degree">Master's Degree
               </h6>
-              <p>Graduate school at BSTU V.G. Shukhova</p>
+              <p data-lang="degree_info">Graduate school at BSTU V.G. Shukhova</p>
               <div class="time">2016 - 2018</div>
-              <h6>Master's Degree</h6>
-              <p>Graduate school at BSTU V.G. Shukhova</p>
+              <h6 data-lang="degree">Master's Degree</h6>
+              <p data-lang="degree_info">Graduate school at BSTU V.G. Shukhova</p>
             </div>
             <!-- end of text-container -->
           </div>
@@ -151,11 +154,11 @@
           <div class="col-lg-4">
             <div class="text-container third">
               <div class="time">2007</div>
-              <h6>Own diversified company</h6>
-              <p>the basis of which is the production of building materials</p>
+              <h6 data-lang="company">Own diversified company</h6>
+              <p data-lang="company_info">the basis of which is the production of building materials</p>
               <div class="time">1987 - 1992</div>
-              <h6>Bachelor Degree</h6>
-              <p>Tashkent State University. V.I. Lenin</p>
+              <h6 data-lang="bachelor">Bachelor Degree</h6>
+              <p data-lang="bachelor_info">Tashkent State University. V.I. Lenin</p>
             </div>
             <!-- end of text-container -->
           </div>
@@ -172,7 +175,7 @@
     <div class="consultancies bg-white pt-5 pb-3">
       <div class="container">
         <div class="consultancies-top">
-          <h2 class="">Personal profiles and accounts</h2>
+          <h2 class="" data-lang="accounts">Personal profiles and accounts</h2>
           <div class="line"></div>
         </div>
         <div class="consultancies-img mt-5 mb-3">
@@ -206,8 +209,8 @@
                   <div class="col-lg-12 pt-5">
                     <!-- Text Container -->
                     <div class="text-container pl-lg-0 pl-sm-5 pr-sm-5 book-description">
-                      <h2 class="text-lg-left text-center">Tamerlane the Great<h2>
-                        <p>A powerful account of the life of Tamerlane the Great (1336-1405), the last master nomadic power, one of history's most extreme tyrants ever, and the subject of Marlowe's play. Marozzi travelled in the footsteps of the great Mogul Emperor of Samarkland to write this wonderful combination of history and travelogue. The name of the last great warlord conjures up images of mystery and romance: medieval warfare on desert plains; the clash of swords on snow-clad mountains; the charge of elephants across the steppes of Asia; the legendary opulence and cruelty of the illiterate, chess-playing nemesis of Asia. He ranks alongside Alexander as one of the world's great conquerors, yet the details of his life are scarcely known in the West. He was not born to a distinguished family, nor did he find his apprenticeship easy - at one point his mobile army consisted only of himself, his wife, seven companions and four horses - but his dominion grew with astonishing rapidity.</p>
+                      <h2 class="text-lg-left text-center" data-lang="book_title">Tamerlane the Great<h2>
+                        <p data-lang="book_info">A powerful account of the life of Tamerlane the Great (1336-1405), the last master nomadic power, one of history's most extreme tyrants ever, and the subject of Marlowe's play. Marozzi travelled in the footsteps of the great Mogul Emperor of Samarkland to write this wonderful combination of history and travelogue. The name of the last great warlord conjures up images of mystery and romance: medieval warfare on desert plains; the clash of swords on snow-clad mountains; the charge of elephants across the steppes of Asia; the legendary opulence and cruelty of the illiterate, chess-playing nemesis of Asia. He ranks alongside Alexander as one of the world's great conquerors, yet the details of his life are scarcely known in the West. He was not born to a distinguished family, nor did he find his apprenticeship easy - at one point his mobile army consisted only of himself, his wife, seven companions and four horses - but his dominion grew with astonishing rapidity.</p>
                         <button
                         class="btn-success mb-2 border rounded-sm text-white px-4 py-1 float-right h5"
                       >
@@ -215,7 +218,8 @@
                           class="text-white text-decoration-none d-flex w-100 justify-content-center align-items-center"
                           href="./book/Выдающиеся_заслуги_Амира_Тимура_перед_своим_народом_и_отечеством.pdf 1.jpg"
                           target="_blank"
-                          ><i class="fa-solid fa-download mr-2"></i> Download</a
+
+                          ><i class="fa-solid fa-download mr-2"></i> <span data-lang="download">Download</span></a
                         >
                       </button>
                     </div>
@@ -239,18 +243,18 @@
     <div class="basic-4 mt-5 mb-5">
       <div class="container">
         <div class="patent-title d-flex justify-content-center align-items-center">
-          <h2 class="mx-3">Publications</h2>
+          <h2 class="mx-3" data-lang="publications">Publications</h2>
           <div class="patent-title__border d-flex w-100"></div>
         </div>
         <div class="see-more d-flex justify-content-end mb-3">
-          <button class="btn-success border px-5 py-2 rounded font-weight-bolder"><a class="text-white text-decoration-none d-flex align-items-center" href="./project.html">See more <i class="fa-solid fa-arrow-right ml-2 ml-2"></i></a></button>
+          <button class="btn-success border px-5 py-2 rounded font-weight-bolder"><a class="text-white text-decoration-none d-flex align-items-center" href="./project.html"><span data-lang="see_more">See more</span> <i class="fa-solid fa-arrow-right ml-2 ml-2"></i></a></button>
         </div>
         <div class="row justify-content-around">
           <div class="p-2 public-card col-lg-4 col-md-6 col-sm-6 col-10">
             <div class="patent-card__inside d-flex flex-column">
               <img class="w-100 patent-img" src="./images/project-1.jpg" alt="" />
               <div class="p-2 d-flex flex-column justify-content-between h-50">
-                <h6>Method of obtaining duolite</h6>
+                <h6 data-lang="publication1">PRINCIPLES OF SOLUTION OF ENVIRONMENTAL PROBLEMS THROUGH THE UTILIZATION OF TECHNOLOGICAL AND PRODUCTION WASTE</h6>
                 <button
                   class="btn-success mb-2 border rounded-sm text-white px-4 py-1 float-right"
                 >
@@ -258,7 +262,7 @@
                     class="text-white text-decoration-none d-flex w-100 justify-content-center align-items-center"
                     href="./project.html"
                     target="_blank"
-                    > Read more <i class="fa-solid fa-arrow-right ml-2"></i></a
+                    ><span data-lang="read_more">Read more</span> <i class="fa-solid fa-arrow-right ml-2"></i></a
                   >
                 </button>
               </div>
@@ -268,7 +272,7 @@
             <div class="patent-card__inside d-flex flex-column">
               <img class="w-100 patent-img" src="./images/project-2.jpg" alt="" />
               <div class="p-2 d-flex flex-column justify-content-between h-50">
-                <h6>Nanoclay for growing plants on desert and fertile soils and a method for its production</h6>
+                <h6 data-lang="publication2">IMPROVING THE EFFICIENCY OF RECYCLING MAN-MADE WASTE</h6>
                 <button
                   class="btn-success mb-2 border rounded-sm text-white px-4 py-1 float-right"
                 >
@@ -276,7 +280,7 @@
                     class="text-white text-decoration-none d-flex w-100 justify-content-center align-items-center"
                     href="./project.html"
                     target="_blank"
-                    > Read more <i class="fa-solid fa-arrow-right ml-2"></i></a
+                    ><span data-lang="read_more"> Read more</span> <i class="fa-solid fa-arrow-right ml-2"></i></a
                   >
                 </button>
               </div>
@@ -286,7 +290,7 @@
             <div class="patent-card__inside d-flex flex-column">
               <img class="w-100 patent-img" src="./images/project-3.jpg" alt="" />
               <div class="p-2 d-flex flex-column justify-content-between h-50">
-                <h6>Method for producing coal-alkali reagent</h6>
+                <h6 data-lang="publication3">Efficient utilization of anthropogenic waste: a particular focus on phosphogypsum and ash slag</h6>
                 <button
                   class="btn-success mb-2 border rounded-sm text-white px-4 py-1 float-right"
                 >
@@ -294,7 +298,7 @@
                     class="text-white text-decoration-none d-flex w-100 justify-content-center align-items-center"
                     href="./project.html"
                     target="_blank"
-                    ></i> Read more <i class="fa-solid fa-arrow-right ml-2"></i></a
+                    ></i><span data-lang="read_more">Read more</span> <i class="fa-solid fa-arrow-right ml-2"></i></a
                   >
                 </button>
               </div>
@@ -314,18 +318,18 @@
       <div class="container">
         <div class="patent-title d-flex justify-content-center align-items-center">
           <div class="patent-title__border d-flex w-100"></div>
-          <h2 class="mx-3">Patents</h2>
+          <h2 class="mx-3" data-lang="patents">Patents</h2>
           <div class="patent-title__border d-flex w-100"></div>
         </div>
         <div class="see-more d-flex justify-content-end mb-3">
-          <button class="btn-success border px-5 py-2 rounded font-weight-bolder"><a class="text-white text-decoration-none d-flex align-items-center" href="./privacy.html">See more <i class="fa-solid fa-arrow-right ml-2 ml-2"></i></a></button>
+          <button class="btn-success border px-5 py-2 rounded font-weight-bolder"><a class="text-white text-decoration-none d-flex align-items-center" href="./privacy.html"><span data-lang="see_more">See more</span> <i class="fa-solid fa-arrow-right ml-2 ml-2"></i></a></button>
         </div>
         <div class="row justify-content-around">
           <div class="p-2 patent-card col-lg-3 col-md-4 col-sm-6 col-10">
             <div class="patent-card__inside d-flex flex-column">
               <img class="w-100 patent-img" src="./images/work-5.jpg" alt="" />
               <div class="p-2 d-flex flex-column justify-content-between h-100">
-                <h6>Method of obtaining duolite</h6>
+                <h6 data-lang="patent1">Method of obtaining duolite</h6>
                 <button
                   class="btn-success mb-2 border rounded-sm text-white px-4 py-1 float-right"
                 >
@@ -333,7 +337,7 @@
                     class="text-white text-decoration-none d-flex w-100 justify-content-center align-items-center"
                     href="./patents/Дуолит 1.jpg"
                     target="_blank"
-                    ><i class="fa-solid fa-download mr-2"></i> Download</a
+                    ><i class="fa-solid fa-download mr-2"></i> <span data-lang="download">Download</span></a
                   >
                 </button>
               </div>
@@ -343,7 +347,7 @@
             <div class="patent-card__inside d-flex flex-column">
               <img class="w-100 patent-img" src="./images/work-6.jpg" alt="" />
               <div class="p-2 d-flex flex-column justify-content-between h-100">
-                <h6>Nanoclay for growing plants on desert and fertile soils and a method for its production</h6>
+                <h6 data-lang="patent2">Nanoclay for growing plants on desert and fertile soils and a method for its production</h6>
                 <button
                   class="btn-success mb-2 border rounded-sm text-white px-4 py-1 float-right"
                 >
@@ -351,7 +355,7 @@
                     class="text-white text-decoration-none d-flex w-100 justify-content-center align-items-center"
                     href="./patents/Патент Наноглина.pdf"
                     target="_blank"
-                    ><i class="fa-solid fa-download mr-2"></i> Download</a
+                    ><i class="fa-solid fa-download mr-2"></i> <span data-lang="download">Download</span></a
                   >
                 </button>
               </div>
@@ -361,7 +365,7 @@
             <div class="patent-card__inside d-flex flex-column">
               <img class="w-100 patent-img" src="./images/work-7.jpg" alt="" />
               <div class="p-2 d-flex flex-column justify-content-between h-100">
-                <h6>Method for producing coal-alkali reagent</h6>
+                <h6 data-lang="patent3">Method for producing coal-alkali reagent</h6>
                 <button
                   class="btn-success mb-2 border rounded-sm text-white px-4 py-1 float-right"
                 >
@@ -369,7 +373,7 @@
                     class="text-white text-decoration-none d-flex w-100 justify-content-center align-items-center"
                     href="./patents/Патент УЩР.pdf"
                     target="_blank"
-                    ><i class="fa-solid fa-download mr-2"></i> Download</a
+                    ><i class="fa-solid fa-download mr-2"></i> <span data-lang="download">Download</span></a
                   >
                 </button>
               </div>
@@ -379,7 +383,7 @@
             <div class="patent-card__inside d-flex flex-column">
               <img class="w-100 patent-img" src="./images/work-8.jpg" alt="" />
               <div class="p-2 d-flex flex-column justify-content-between h-100">
-                <h6>Active synthesized additive for cement and method for its preparation</h6>
+                <h6 data-lang="patent4">Active synthesized additive for cement and method for its preparation</h6>
                 <button
                   class="btn-success mb-2 border rounded-sm text-white px-4 py-1 float-right"
                 >
@@ -387,7 +391,7 @@
                     class="text-white text-decoration-none d-flex w-100 justify-content-center align-items-center"
                     href="./patents/Патент_2733360_Активная_синтезированная_мин_добавка_к_цементу.pdf"
                     target="_blank"
-                    ><i class="fa-solid fa-download mr-2"></i> Download</a
+                    ><i class="fa-solid fa-download mr-2"></i> <span data-lang="download">Download</span></a
                   >
                 </button>
               </div>
@@ -467,7 +471,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
-            <p class="p-small">
+            <p class="p-small" data-lang="footer_emblem">
               Made by IFraganus IT Co. ALL RIGHT RESERVED.
             </p>
           </div>
