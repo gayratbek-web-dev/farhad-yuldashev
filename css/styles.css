@@ -400,7 +400,11 @@ input[type="checkbox"] {
   line-height: 1rem;
   text-decoration: none;
 }
-
+@media (max-width: 576px){
+  .navbar .logo-text{
+    font-size: 1.275rem;
+  }
+}
 .offcanvas-collapse {
   position: fixed;
   top: 3.25rem; /* adjusts the height between the top of the page and the offcanvas menu */
@@ -534,6 +538,11 @@ input[type="checkbox"] {
 .header .h1-large {
   margin-bottom: 1.75rem;
   color: #ffffff;
+}
+@media (max-width: 576px){
+  .header .h1-large{
+    font-size: 2rem;
+  }
 }
 
 .header .btn-solid-lg:hover {
